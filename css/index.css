@@ -250,3 +250,54 @@ button{
     color: var(--color-white);
     text-align: center;
 }
+
+/*Reasons To Travel*/
+.reasons-to-travel{
+    grid-area: reasons-to-travel;
+    padding-bottom: var(--sd-padding-size);
+}
+
+/*Reasons Container*/
+.reasons-container{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(50%, auto));
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--sd-padding-size);
+}
+
+/*Header Item*/
+.header-item{
+    display: flex;
+    align-items: center;
+}
+
+.header-item span{
+    font-size: var(--big-font-size);
+    font-weight: 700;
+    color: var(--color-primary);
+    padding-right: 1rem;
+    width: 100%;
+    max-width: 56px;
+}
+
+/*Travelers*/
+.travelers{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.travelers img{
+    width: 90%;
+}
+
+/*Reasons Item*/
+.reason-item p{
+    font-size: var(--sd-font-size);
+    font-weight: 400;
+    color: var(--color-primary);
+    text-align: justify;
+    padding: 2rem 0;
+    padding-left: 5rem;
+    width: 75%;
+}
