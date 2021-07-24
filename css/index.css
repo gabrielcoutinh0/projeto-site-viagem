@@ -1,0 +1,37 @@
+:root{
+    /*Colors*/
+    --color-primary: #0E2844;
+    --color-secondary: #FF6525;
+    --color-white: #FAFAFA;
+    --color-soft: #FFF9F4;
+
+    /*Typography*/
+    font-size: 10px;
+    --sd-font-size: 2rem;
+    --medium-font-size: 2.5rem;
+    --big-font-size: 3.5rem;
+    --h1-font-size: 7.5rem
+    --li-font-size: 1.8rem;
+
+    /*Padding*/
+    --sd-padding-size: 6rem;
+    --ft-padding-size: 10rem;
+}
+
+/*CSS Resets*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*CSS Global*/
+body{
+    width: 100%;
+    max-width: 1250px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 3rem 5%;
+    font-family: 'Quicksand', sans-serif;
+    background: var(--color-white);
+}
