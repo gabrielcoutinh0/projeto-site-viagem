@@ -12,6 +12,8 @@
     --big-font-size: 3.5rem;
     --h1-font-size: 7.5rem;
     --li-font-size: 1.8rem;
+    --card-sd-font-size: 1.8rem;
+    --card-big-font-size: 3rem;
 
     /*Padding*/
     --sd-padding-size: 6rem;
@@ -300,4 +302,116 @@ button{
     padding: 2rem 0;
     padding-left: 5rem;
     width: 75%;
+}
+
+/*Prices*/
+.prices{
+    grid-area: prices;
+    padding-bottom: var(--ft-padding-size);
+}
+
+/*Header Prices*/
+.header-prices h2{
+    font-size: var(--big-font-size);
+    color: var(--color-secondary);
+    text-align: center;
+}
+
+.header-prices p{
+    font-size: var(--big-font-size);
+    font-weight: 700;
+    color: var(--color-primary);
+    text-align: center;
+    padding: 4rem 0;
+}
+
+/*Prices Card Container*/
+.prices-card-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--color-soft);
+    border: solid .3rem var(--color-secondary);
+    border-radius: 1rem;
+    padding: 4rem 2rem;
+}
+
+/*card*/
+.card{
+    width: 100%;
+    max-width: 380px;
+    height: 530px;
+    padding: 5rem 2.5rem;
+    margin-right: 2rem;
+    background: var(--color-primary);
+    border: none;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    word-wrap: break-word;
+}
+
+.card#premium{
+    margin-right: 0;
+}
+
+/*Card Body*/
+.card-body{
+    height: 100%;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.card-body .price{
+    font-size: var(--card-big-font-size);
+}
+
+.card-body .price span{
+    font-size: var(--card-sd-font-size);
+}
+
+.card-body .plan-type{
+    font-size: var(--card-big-font-size);
+    color: var(--color-secondary);
+    padding-top: 2rem;
+}
+
+.card-body .plan-text{
+    font-size: var(--card-sd-font-size);
+    text-align: left;
+    padding-top: 1rem;
+}
+
+.card-body .plan-list{
+    max-height: 200px;
+    height: 100%;
+    padding-top: 2rem ;
+}
+
+.card-body .plan-list li{
+    display: flex;
+    align-items: center;
+    font-size: var(--li-font-size);
+}
+
+.card-body .plan-list i{
+    font-size: 2rem;
+    padding: 1rem 1.2rem 1rem 0;
+}
+
+/*Plan btn container*/
+.plan-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.plan-btn-container button{
+    width: 70%;
+    padding: 1.5rem 2rem;
+    background: var(--color-white);
+    border: solid .3rem var(--color-secondary);
+    color: var(--color-secondary);
 }
