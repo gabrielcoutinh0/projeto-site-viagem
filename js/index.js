@@ -33,3 +33,20 @@ function eventDisable(element){
         menuNav.classList.toggle('active');
     });
 }
+
+function screenUp(){
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+function buttonScroll(){
+    if(window.scrollY <= 200){
+        document.querySelector('.scrollbutton').style.display = 'none';
+    }else{
+        document.querySelector('.scrollbutton').style.display = 'block';
+    }
+}
+
+window.addEventListener('scroll', buttonScroll);
