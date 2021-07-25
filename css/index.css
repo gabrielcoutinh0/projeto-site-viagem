@@ -415,3 +415,72 @@ button{
     border: solid .3rem var(--color-secondary);
     color: var(--color-secondary);
 }
+
+/*Footer*/
+.footer{
+    grid-area: footer;
+    padding-bottom: 5rem;
+}
+
+/*Footer Menu Container*/
+.footer-menu-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25%, auto));
+}
+
+/*Footer Menu Item*/
+.footer-menu-item span{
+    display: inline-block;
+    font-size: var(--medium-font-size);
+    font-weight: 700;
+    color: var(--color-secondary);
+    padding-bottom: 1.8rem;
+}
+
+/*Footer Menu*/
+.footer-menu li{
+    font-size: var(--li-font-size);
+    font-weight: 700;
+    color: var(--color-primary);
+    padding: .8rem 0;
+    cursor: pointer;
+}
+
+/*Menu social media*/
+.menu-social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-social-media li{
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+    margin-right: 2rem;
+    background: var(--color-secondary);
+    font-size: 2.5rem;
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-social-media li:last-child{
+    margin-right: 0;
+}
+
+/*Brand Container*/
+.brand-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.brand-container img{
+    width: 80%;
+}
