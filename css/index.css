@@ -108,6 +108,7 @@ button{
 /*Menu*/
 .menu{
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -483,4 +484,152 @@ button{
 
 .brand-container img{
     width: 80%;
+}
+
+@media screen and (max-width: 1100px) {
+    :root{
+        --sd-font-size: 1.8rem;
+        --h1-font-size: 6rem;
+    }
+
+    .prices-card-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 4rem;
+        justify-items: center;
+    }
+
+    .card{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 955px){
+    .menu-toggle-container{
+        display: block;
+        position: absolute;
+        right: 20px;
+        z-index: 999;
+    }
+
+    .menu{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        max-width: 250px;
+        height: 100vh;
+        padding: 100px 20px;
+        z-index: 800;
+        background-color: var(--color-primary);
+        flex-direction: column;
+        transition: .5s ease;
+    }
+
+    .menu li a{
+        color: var(--color-white);
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .menu-toggle-container.active{
+        position: fixed;
+    }
+
+    .menu.active{
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    :root{
+        --big-font-size: 3rem;
+        --sd-padding-size: 5rem;
+        --ft-padding-size: 8rem;
+    }
+
+    .logo{
+        max-width: 177px;
+    }
+
+    .greetings{
+        display: block;
+        padding: 4rem 0 5rem;
+    }
+    
+    .content-invite{
+        white-space: normal;
+    }
+
+    .content-invite p{
+        max-width: 80%;
+        padding-top: 4rem;
+    }
+
+    .figure-travelling, .travelers{
+        justify-content: center;
+    }
+
+    .trip-container{
+        flex-direction: column;
+    }
+
+    .trip-card{
+        width: 70%;
+        margin-bottom: 3rem;
+    }
+
+    .trip-card#cardThree{
+        margin-bottom: 0;
+    }
+
+    .reasons-container{
+        display: block;
+    }
+
+    .reason-item p{
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .footer-menu-container{
+        grid-template-columns: 1fr;
+        row-gap: 4rem;
+    }
+
+    .brand-container{
+        padding-top: 3rem;
+    }
+
+    .brand-container img{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    :root{
+        --sd-font-size: 1.5rem;
+        --li-font-size: 1.25rem;
+    }
+
+    .content-invite p{
+        max-width: 100%;
+        padding-top: 2rem;
+    }
+
+    .trip-card{
+        width: 100%;
+    }
+
+    .card{
+        padding: 3rem 2rem;
+    }
+
+    .plan-btn-container{
+        padding: 2rem;
+    }
+
+    .plan-btn-container button{
+        width: 100%;
+    }
 }
