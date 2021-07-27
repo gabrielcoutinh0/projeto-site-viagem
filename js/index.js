@@ -64,7 +64,6 @@ function smoothScroll(target, duration){
         let run = ease(timeElapsed, startPostion, distance, duration);
         window.scrollTo(0, run);
         if(timeElapsed < duration) requestAnimationFrame(animation);
-        console.log('timeElapsed: ' + timeElapsed + 'duration: ' + duration);
     }
 
     function ease(time, start, distance, duration){
@@ -80,7 +79,6 @@ function smoothScroll(target, duration){
 let destinations = document.querySelector('#a-destinations');
 let prices = document.querySelector('#a-prices');
 let scrollbutton = document.querySelector('.scrollbutton');
-
 
 destinations.addEventListener('click', () => {
     smoothScroll('#destinations', 1000);
