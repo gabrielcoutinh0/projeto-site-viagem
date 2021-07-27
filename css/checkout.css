@@ -1,0 +1,164 @@
+:root{
+    /*Colors*/
+    --color-primary: #0E2844;
+    --color-secondary: #FF6525;
+    --color-white: #FAFAFA;
+
+    /*Typography*/
+    font-size: 10px;
+    --sd-font-size: 2rem;
+    --medium-font-size: 2.5rem;
+    --big-font-size: 3rem;
+}
+
+/*CSS reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*CSS Global*/
+body{
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 5rem 0;
+    font-family: 'Quicksand', sans-serif;
+    background: var(--color-primary);
+    color: var(--color-primary);
+}
+
+input{
+    outline: none;
+}
+
+label{
+    display: block;
+}
+
+/*Container*/
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Checkout Container*/
+.checkout-container{
+    width: 60%;
+    padding: 5rem;
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Congratulation and plan type*/
+.congratulation-and-plan-type{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.congratulation-and-plan-type h1{
+    font-size: var(--big-font-size);
+    font-weight: 700;
+    text-align: center;
+}
+
+/*Plan Type*/
+.plan-type{
+    margin: 2.5rem 0;
+    background-color:  var(--color-secondary);
+    border-radius: 1rem;
+}
+
+.plan-type p{
+    font-size: var(--medium-font-size);
+    font-weight: 600;
+    color: var(--color-white);
+    text-align: center;
+    padding: 1.5rem 2rem;
+}
+
+/*Form Container*/
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 70%;
+}
+
+.form-container h2{
+    font-size: var(--sd-font-size);
+    font-weight: 700;
+    text-align: center;
+}
+
+/*Input Group*/
+.input-group{
+    padding-top: 1.5rem;
+}
+
+.input-group label{
+    font-size: var(--sd-font-size);
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 1.25rem;
+}
+
+.input-group input{
+    width: 100%;
+    padding: 1.25rem 2rem;
+    border-radius: 1rem;
+    border: solid .3rem var(--color-secondary);
+}
+
+/*Card Special Info*/
+.card-special-info{
+    display: flex;
+    align-items: center;
+}
+
+.card-special-info .input-group{
+    margin-right: .8rem;
+}
+
+.card-special-info .input-group input{
+    width: 90%;
+}
+
+.card-special-info .input-group input[name='expirationDate']::placeholder{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--color-primary);
+}
+
+/*Btn Container*/
+.btn-container{
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+.btn-container button{
+    width: 60%;
+    padding: 2rem 1.25rem;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-size: var(--medium-font-size);
+    font-weight: 700;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.btn-container button:hover{
+    opacity: 0.9;
+    transition: .5s ease;
+}

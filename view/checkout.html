@@ -12,7 +12,7 @@
     <title>OverFy - Sua viagem, nossa missão :)</title>
 </head>
 <body>
-    <div class="container">
+    <div id="container">
         <div class="checkout-container">
             <div class="congratulations-and-plan-type">
                 <h1>Uhull! Parabéns por sua escolha!</h1>
@@ -45,10 +45,13 @@
                             <input type="text" name="expirationDate" id="expirationDate" placeholder="Ex.: 01/25 (M/A)" required>
                         </div> <!--input-group-->
                         <div class="input-group">
-                            <label for="securityCode">CVV</label>
+                            <label for="securityCode">CVV (no verso)</label>
                             <input type="text" name="securityCode" id="securityCode">
                         </div> <!--input-group-->
                     </div> <!--card-special-info-->
+                    <div class="btn-container">
+                        <button>Pagar :)</button>
+                    </div> <!--btn-conainer-->
                 </form> <!--checkout-->
             </div> <!--form-container-->
         </div> <!--checkout-container-->
