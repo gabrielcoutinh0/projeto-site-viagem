@@ -162,3 +162,38 @@ label{
     opacity: 0.9;
     transition: .5s ease;
 }
+
+@media screen and (max-width: 1024px){
+    .card-special-info{
+        display: block;
+    }    
+
+    .card-special-info .input-group{
+        margin-right: 0;
+    }
+
+    .card-special-info .input-group input{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    :root{
+        --sd-font-size: 1.8rem;
+        --medium-font-size: 2rem;
+    }
+
+    .checkout-container{
+        width: 90%;
+    }
+
+    .form-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .btn-container button{
+        width: 80%;
+    }
+}
