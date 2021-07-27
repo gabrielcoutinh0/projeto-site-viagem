@@ -118,6 +118,7 @@ button{
     color: var(--color-primary);
     padding: 1rem;
     margin-right: 1.5rem;
+    cursor: pointer;
 }
 
 .menu li a:hover{
