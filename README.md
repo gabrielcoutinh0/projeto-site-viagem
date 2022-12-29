@@ -9,7 +9,7 @@
 ## Planos
 
 <h1 align="center">
-    <img alt="Preview Desktop Planos" title="Preview Desktop Planos" src=".github/Desktop.png" />
+    <img alt="Preview Desktop Planos" title="Preview Desktop Planos" src=".github/Plan.png" />
 </h1>
 
 <br>
